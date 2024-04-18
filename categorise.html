@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorized Complaints</title>
+</head>
+<body>
+    <h2>Categorized Complaints</h2>
+    <ul>
+        {% for complaint in complaints %}
+        <li>
+            <strong>Category:</strong> {{ complaint.category }}<br>
+            <strong>Complaint Data:</strong> {{ complaint.complaint_data }}<br>
+            <strong>Severity:</strong> {{ complaint.severity }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
